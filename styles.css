@@ -12,13 +12,13 @@ html, body {
 body {
   background-color: #f3f3f3;
   display: flex;
-  flex: 1 1 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-family: Arial, sans-serif;
 }
 
+/* Navigation Container */
 #nav-container {
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,6 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  height: 100%;
 }
 
 #small-image {
@@ -44,17 +43,20 @@ body {
   line-height: 20px;
 }
 
+/* Center Content */
 #center-container {
   height: 100%;
   width: 80%;
   display: flex;
-  flex: 1 1 0;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
   justify-content: space-between;
   align-items: center;
 }
 
-#about-container {
+#about-container,
+#user-info {
   width: 20%;
+  min-width: 200px; /* Ensure readability on smaller screens */
 }
 
 #about {
@@ -65,6 +67,7 @@ body {
 #icon-container {
   height: auto;
   display: flex;
+  flex-wrap: wrap; /* Stack icons if needed */
   gap: 20px;
 }
 
@@ -75,29 +78,26 @@ body {
   border-radius: 4px;
 }
 
+/* Image Container */
 #image-container {
-  height: 400px;
+  height: auto;
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 250px; /* Ensure adaptability */
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
   background-color: black;
   color: #f3f3f3;
   border-radius: 50%;
 }
 
-#user-info {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-
-}
-
+/* Footer */
 #footer-container {
   text-align: center;
   padding: 20px;
@@ -107,6 +107,7 @@ img {
   border-radius: 8px;
 }
 
+/* Gradient Circle */
 .circle {
   width: 400px;
   height: 400px;
@@ -114,3 +115,69 @@ img {
   border-radius: 50%;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #nav-container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #center-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #about-container,
+  #user-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  #image-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #small-image-and-name-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  #center-container {
+    width: 90%;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #icon-container {
+    gap: 10px;
+  }
+
+  img {
+    max-width: 200px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+}

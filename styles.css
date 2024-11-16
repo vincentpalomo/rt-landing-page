@@ -24,15 +24,24 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  margin-top: 12px;
 }
 
-#small-image-and-name {
+#small-image-and-name-container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
 }
 
 #small-image {
   height: 40px;
   width: 40px;
+}
+
+.name-role {
+  line-height: 20px;
 }
 
 #center-container {

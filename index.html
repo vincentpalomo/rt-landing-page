@@ -5,42 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="nav-container">
-      <div id="small-image-and-name-container">
-        <img src="#" alt="" id="small-image" />
-        <div class="name-role">
-          <h1>name</h1>
-          <h3>role/position</h3>
-        </div>
-      </div>
-      <a href="/about.html">resume</a>
+    <header class="nav-container">
+      <div>Lucid Studio</div>
+      <ul class="nav-links">
+        <li class="nav-item">about</li>
+        <li class="nav-item">work</li>
+        <li class="nav-item">contact</li>
+      </ul>
+    </header>
+
+    <div class="main-container">
+      <div class="title-main">lucid studio</div>
+      <span class="subtext-main">embody the essence of modern design</span>
     </div>
-    <div id="center-container">
-      <div id="about-container">
-        <p id="about">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo aspernatur, qui, nostrum dolore excepturi
-          eaque odit molestias atque totam vitae delectus accusamus, eos quaerat.
+
+    <div class="about-container">
+      <div class="about-text-container">
+        <div class="title">about</div>
+        <p class="about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nostrum vitae sunt eum qui dolor?
+          Praesentium dolorem consequuntur ipsum veniam aspernatur ut non cupiditate architecto.
         </p>
-        <div id="icon-container">
-          <div class="icon"></div>
-          <div class="icon"></div>
-          <div class="icon"></div>
-          <div class="icon"></div>
-        </div>
       </div>
-      <div id="image-container">
-        <!-- <img src="#" alt="image" /> -->
-        <div class="circle"></div>
+      <div class="about-text-container">
+        <p class="about-text">
+          <div class="title">≎</div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid a fuga libero possimus expedita praesentium
+          tenetur ipsa reprehenderit eius? Adipisci, nisi sed inventore perferendis veniam odit explicabo voluptatum
+          cupiditate animi repellat numquam? Provident, velit. Voluptas perferendis saepe sunt amet libero natus tempore
+          ducimus magnam cumque, enim deleniti culpa voluptatibus quas!
+        </p>
       </div>
-      <div id="user-info">
-        <h1>username</h1>
-        <h2>role/position</h2>
+      <div class="about-text-container">
+        <p class="about-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid a fuga libero possimus expedita praesentium
+          tenetur ipsa reprehenderit eius? Adipisci, nisi sed inventore perferendis veniam odit explicabo voluptatum
+          cupiditate animi repellat numquam? Provident, velit. Voluptas perferendis saepe sunt amet libero natus tempore
+          ducimus magnam cumque, enim deleniti culpa voluptatibus quas!
+        </p>
+      </div>
+      <div class="about-text-container">
+        <p class="about-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid a fuga libero possimus expedita praesentium
+          tenetur ipsa reprehenderit eius? Adipisci, nisi sed inventore perferendis veniam odit explicabo voluptatum
+          cupiditate animi repellat numquam? Provident, velit. Voluptas perferendis saepe sunt amet libero natus tempore
+          ducimus magnam cumque, enim deleniti culpa voluptatibus quas!
+        </p>
       </div>
     </div>
-    <div id="footer-container">
-      <h1>footer</h1>
+
+    <div>
+      <div>⇎</div>
     </div>
+    <canvas id="shader-canvas"></canvas>
+    <script src="shader.js" defer></script>
   </body>
 </html>

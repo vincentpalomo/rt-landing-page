@@ -4,13 +4,14 @@ export interface BlogPost {
   slug: string
   content: string
   excerpt: string
-  coverImage?: string
+  coverImage: string
   publishedAt: string
   author: {
     name: string
-    image?: string
+    avatar: string
   }
   tags: string[]
+  isDraft: boolean
 }
 
 export interface BlogPostInput {
